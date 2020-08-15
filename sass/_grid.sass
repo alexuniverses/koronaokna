@@ -29,11 +29,16 @@ body
     background-position: top 100%
     background-size: cover
 .profiles
+    margin-top: 50px
 .windows
+    margin-top: 50px
 .simple_buy
+    margin-top: 50px
 .consult_form
     background: url(./../img/bg/citybg.jpg) no-repeat
     background-size: 100%
+    background-position: 100% 50%
+    padding-bottom: 200px
 .feedback
 .address
     background: #3F51B5
@@ -67,16 +72,17 @@ body
 #button.show
     opacity: 1
     visibility: visible
-@media (min-width: 500px)
+@media screen and ( max-width: 500px )
     #button
         margin: 30px
+    .banner
+        padding-bottom: 0
 @media screen and ( max-width: 560px )
     .header
-        margin-top: 100px
+        margin-top: 60px
         max-height: 810px
         background: url(./../img/bg/headerbg.jpg) 70% 0 no-repeat
         background-size: cover
-    #profiles_title>#windows_title>#feedback_title>#address_title
         font-size: 30px
 @media screen and ( max-width: 410px )
     .header

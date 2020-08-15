@@ -24,7 +24,6 @@ function initialHomeSlider() {
         smartSpeed: 1000
     });
 }
-
 function destroyHomeSlider() {
     $homeSlider.trigger("destroy.owl.carousel").removeClass("owl-carousel");
 }

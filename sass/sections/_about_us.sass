@@ -26,6 +26,7 @@
             font-family: Montserrat-Bold 
             list-style: none
             background: url(./../img/bg/list-dots.svg) no-repeat
+            background-position: 0% 10%
             li
                 padding-left: 30px
                 padding-bottom: 13px
@@ -53,6 +54,8 @@
             text-align: center
             font-size: 30px
         &__panels
+            h1
+                font-size: 30px
         &__panels .col-md-6:nth-child(1)
             padding: 20px
             p
@@ -66,13 +69,18 @@
             h1
                 padding-bottom: 20px
     .advantages
+        display: flex
+        flex-direction: column
         div
             display: flex
             flex-direction: row
+            align-items: center
             span
-                align-self: flex-start
+                padding-top: 10px
+                align-self: stretch
                 padding-left: 20px
             img
+                align-self: center
                 max-width: 70px
                 max-height: 70px
 @media screen and ( max-width: 1024px )
@@ -81,6 +89,7 @@
             margin-top: 0px
         &__panels .col-md-6:nth-child(2)
             margin-top: 0px
+    
 @media screen and ( max-width: 600px )
     .about_us
         margin-top: 100px

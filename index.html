@@ -23,6 +23,10 @@
     <nav class="fixed-top navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="#"><img id="navbar_logo" src="img/logos/header_logo.png"></a>
+            <div class="navbar_mobile_tel">
+                <span><a href="#">+375 (29) 655-16-29</a></span>
+                <span><a href="#">+375 (29) 288-14-32</a></span>
+            </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -228,7 +232,6 @@
                     </div>
                 </div>
             </div>
-            </div>
         </section>
     </a>
     <a name="consult_form">
@@ -298,9 +301,8 @@
                         </div>
                     </div>
                 </div>
+                <h1 id="address_title">Наш адрес</h1>
             </div>
-            </div>
-            <h1 id="address_title">Наш адрес</h1>
         </section>
     </a>
     <a name="address">
@@ -317,7 +319,7 @@
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control" id="formGroupExampleInput2"
-                                        placeholder="Телефон">
+                                        placeholder="Телефон*">
                                 </div>
                                 <button type="button" class="btn">Отправить</button>
                             </form>
@@ -338,11 +340,11 @@
                 <div class="col-md-4">
                     <h5>© «Корона Окна», 2020</h5>
                 </div>
-                <div class="col-md-5"><span class="footer__number">+375 (29) 655-16-29</span></div>
+                <div class="col-md-5"><span class="footer__number"><a href="#">+375 (29) 655-16-29</a></span></div>
                 <div class="col-md-3 footer__nav">
-                    <span>Главная</span>
-                    <span>Обратная связь</span>
-                    <span>Политика конфиденциальности</span>
+                    <span><a href="#">Главная</a></span>
+                    <span><a href="#">Обратная связь</a></span><br>
+                    <span><a href="#">Политика конфиденциальности</a></span>
                 </div>
             </div>
         </div>
@@ -359,25 +361,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/owl-sc.js"> </script>
-    <script>
-        var btn = $('#button');
-
-        $(window).scroll(function () {
-            if ($(window).scrollTop() > 700) {
-                btn.addClass('show');
-            } else {
-                btn.removeClass('show');
-            }
-        });
-
-        btn.on('click', function (e) {
-            e.preventDefault();
-            $('html, body').animate({ scrollTop: 0 }, '300');
-        });
-
-
-    </script>
-
+    <script src="js/scroll-top.js"></script>
 </body>
 
 </html>

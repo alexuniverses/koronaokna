@@ -33,6 +33,8 @@
         flex-direction: column
     &__phone_set a:hover
         color: #F44336 !important
+.navbar_mobile_tel
+    display: none
 @media screen and ( max-width: 991px)
     .navbar-collapse
         display: flex
@@ -44,13 +46,22 @@
     .navbar
         &__phone_set a
             display: none
+    .navbar_mobile_tel
+        display: flex
+        flex-direction: column
+        font-size: 18px
 @media screen and ( max-width: 768px )
     #navbar_btn
         margin: 15px 0px 0px -15px 
     
-@media screen and ( max-width: 480px )
+@media screen and ( max-width: 537px )
     #navbar_logo
-        width: 200px
-        height: 65px
+        padding: 0
+        width: 110px
+        height: 25px
+    .navbar_mobile_tel
+        display: flex
+        flex-direction: column
+        font-size: 11px
     
     

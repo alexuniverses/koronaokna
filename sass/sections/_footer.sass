@@ -2,21 +2,30 @@
     padding-top: 30px
     padding-bottom: 30px
     h5
+        font-family: Montserrat
         color: #999999
         font-size: 16px
-    &__number
+    &__number a
         font-family: Roboto
-        color: #222
+        color: #222 !important
         font-size: 22px
         font-weight: 700
-    &__nav
+    &__number a:hover
+        text-decoration: none
+        font-family: Roboto
+        color:#F44336 !important
+        font-size: 22px
+        font-weight: 700
+    &__nav a
         text-align: center
         font-family: Montserrat
         font-size: 13px
+        color: #999999
     &__nav span:nth-child(1n):after
         content: "|"
         font-size: 13px
         padding-left: 3px
+        color: #999999
 @media screen and ( max-width: 769px )
     .footer
         text-align: center
