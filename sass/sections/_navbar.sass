@@ -1,0 +1,56 @@
+#navbar_logo
+    padding: 15px
+#navbar_btn
+    margin: 6px
+    width: 197px
+    height: 36px
+    border: 2px solid #F44336
+    color: #F44336
+    font-family: Montserrat-SemiBold
+    font-size: 14px
+    border-radius: 100px
+#navbar_btn:hover
+    color: #ffffff
+    background: #F44336
+.nav-link
+    font-family: Montserrat-SemiBold
+    font-size: 14px
+    color: black !important
+.nav-link:hover
+    color: #F44336 !important
+.navbar-collapse
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+.navbar
+    &__info_block
+    &__phone_set a
+        color: black
+        font-family: Roboto
+        font-size: 20px
+        text-decoration: none
+        display: flex
+        flex-direction: column
+    &__phone_set a:hover
+        color: #F44336 !important
+@media screen and ( max-width: 991px)
+    .navbar-collapse
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        padding: 30px
+    #navbar_btn
+        margin: 15px 0px 0px -100px
+    .navbar
+        &__phone_set a
+            display: none
+@media screen and ( max-width: 768px )
+    #navbar_btn
+        margin: 15px 0px 0px -15px 
+    
+@media screen and ( max-width: 480px )
+    #navbar_logo
+        width: 200px
+        height: 65px
+    
+    

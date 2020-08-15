@@ -1,0 +1,26 @@
+.footer
+    padding-top: 30px
+    padding-bottom: 30px
+    h5
+        color: #999999
+        font-size: 16px
+    &__number
+        font-family: Roboto
+        color: #222
+        font-size: 22px
+        font-weight: 700
+    &__nav
+        text-align: center
+        font-family: Montserrat
+        font-size: 13px
+    &__nav span:nth-child(1n):after
+        content: "|"
+        font-size: 13px
+        padding-left: 3px
+@media screen and ( max-width: 769px )
+    .footer
+        text-align: center
+        &__number
+            padding-top: 20px
+        &__nav
+            padding-top: 20px    

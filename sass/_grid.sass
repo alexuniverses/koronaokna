@@ -1,0 +1,98 @@
+html
+    scroll-behavior: smooth
+body
+    margin: 0 auto
+.container
+    max-width: 1240px
+    width: 100%
+.form-control:focus 
+    border-color: 0
+    box-shadow: none
+.btn:focus
+    border-color: 0
+    box-shadow: none
+.navbar
+    background: #fff !important
+    box-shadow: 0 0 5px #000000b6
+.header
+    margin-top: 90px
+    height: 100%
+    max-height: 810px
+    padding-bottom: 70px
+    background: url(./../img/bg/headerbg.jpg) 100% 0 no-repeat
+    background-size: cover
+.banner
+    background: #bed7ef
+    padding-bottom: 100px
+.about_us
+    background: url(./../img/bg/windowbg.jpg) no-repeat
+    background-position: top 100%
+    background-size: cover
+.profiles
+.windows
+.simple_buy
+.consult_form
+    background: url(./../img/bg/citybg.jpg) no-repeat
+    background-size: 100%
+.feedback
+.address
+    background: #3F51B5
+#button
+    display: inline-block
+    background-color: #F44336
+    width: 50px
+    height: 50px
+    text-align: center
+    border-radius: 4px
+    position: fixed
+    bottom: 30px
+    right: 30px
+    transition: background-color .3s,opacity .5s, visibility .5s
+    opacity: 0
+    visibility: hidden
+    z-index: 1000
+#button::after 
+    content: "\f077"
+    font-family: FontAwesome
+    font-weight: normal
+    font-style: normal
+    font-size: 2em
+    line-height: 50px
+    color: #fff
+#button:hover 
+    cursor: pointer
+    background-color: #CF392E
+#button:active
+    background-color: #7A221B
+#button.show
+    opacity: 1
+    visibility: visible
+@media (min-width: 500px)
+    #button
+        margin: 30px
+@media screen and ( max-width: 560px )
+    .header
+        margin-top: 100px
+        max-height: 810px
+        background: url(./../img/bg/headerbg.jpg) 70% 0 no-repeat
+        background-size: cover
+    #profiles_title>#windows_title>#feedback_title>#address_title
+        font-size: 30px
+@media screen and ( max-width: 410px )
+    .header
+        margin-top: 80px
+        max-height: 810px
+        background: url(./../img/bg/headerbg.jpg) 60% 0 no-repeat
+        background-size: cover
+@media screen and ( max-width: 600px )
+    .banner
+        padding-bottom: 0px
+@media screen and ( max-width: 768px )
+    .about_us
+        background: url(./../img/bg/windowbg.jpg) no-repeat
+        background-size: cover
+        background-position: center 80%
+
+    
+    
+

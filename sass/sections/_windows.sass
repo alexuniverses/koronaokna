@@ -1,0 +1,57 @@
+#windows_title
+    padding-top: 50px
+    padding-bottom: 50px
+    text-align: center
+    font-family: Montserrat-Black
+    font-size: 50px
+    color: #999999
+.home-slider
+    display: flex
+    justify-content: center
+.windows
+    &__card
+        margin: 17px
+        border: 1px solid #e0e0e0
+        padding: 50px
+        display: flex
+        flex-direction: column
+        text-align: center
+        h3
+            padding-bottom: 10px
+            font-family: Montserrat-SemiBold
+            font-size: 20px
+        span
+            padding-bottom: 10px
+            font-family: Montserrat-SemiBold
+            font-size: 33px
+        button
+            margin: 0 auto
+            font-family: Montserrat
+            max-width: 145px
+            border-radius: 100px
+            color: #ffffff
+            background-color: #F44336
+            border-color: #F44336
+        button:hover
+            border-radius: 100px
+            color: #ffffff
+            background-color: #F44336
+            border-color: #F44336
+            box-shadow: 0 0 25px #a94444b6
+    &__card:hover
+        box-shadow: 0 0 10px #0000003e
+    &__card img:nth-child(1)
+        margin-bottom: 20px
+        display: flex
+        align-self: center
+        max-width: 71px
+        max-height: 37px
+@media screen and ( max-width: 769px )
+    .windows
+        &__card
+        &__card img:nth-child(2)
+            max-width: 285px
+            max-height: 265px
+            margin: 0 auto
+
+    
