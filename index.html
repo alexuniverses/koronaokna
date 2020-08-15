@@ -49,12 +49,33 @@
                         <span><a href="#">+375 (29) 288-14-32</a></span>
                     </div>
                     <div class="col-md-6">
-                        <button type="button" class="btn" id="navbar_btn">Перезвоните мне</button>
+                        <button type="button" class="btn" id="navbar_btn" data-toggle="modal"
+                            data-target="#navModal">Перезвоните мне</button>
                     </div>
                 </div>
             </div>
         </div>
     </nav>
+    <div class="modal fade" id="navModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <h1>Укажите Ваши<br>контактные данные</h1>
+                <form>
+                    <div class="form-group">
+                        <label for="navnameform">Ваше Имя</label>
+                        <input type="text" class="form-control" id="navnameform" placeholder="Имя">
+                    </div>
+                    <div class="form-group">
+                        <label for="navtelform">Телефон</label>
+                        <input type="text" class="form-control" id="navtelform" placeholder="+375(**) ***-**-**">
+                    </div>
+                </form>
+
+                <button type="button" class="btn" id="nav_popup_btn">Отправить</button>
+            </div>
+        </div>
+    </div>
     <header class="header">
         <div class="container">
             <div class="row">
@@ -63,7 +84,8 @@
                         <span>пластиковые</span>
                         <span>окна</span>
                         <span>в рассрочку до 24 месяцев</span>
-                        <button type="button" class="btn" id="header_btn">Вызвать замерщика</button>
+                        <button type="button" class="btn" id="header_btn" data-toggle="modal"
+                            data-target="#navModal">Вызвать замерщика</button>
                     </div>
                 </div>
             </div>
@@ -309,6 +331,14 @@
         <section class="address">
             <div class="container">
                 <a name="address">
+                    <div class="row">
+                        <div class="col-md address_contacts">
+                            <h4>Контакты</h4>
+                            <span>Минск, ул. Тепличная, 9</span>
+                            <span>+375 (29) 655-16-29</span>
+                            <span>+375 (29) 288-14-32</span>
+                        </div>
+                    </div>
                     <div class="row address__form">
                         <div class="col-md-4 address__form_side">
                             <form>
